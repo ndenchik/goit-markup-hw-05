@@ -619,6 +619,10 @@ footer {
     margin-right: 120px;
  }
 
+ .footer-media{
+    margin-right: 80px;
+ }
+
 .footer-social-title{
     color: var(--backgroud-color);
     font-weight: 500;
@@ -659,6 +663,57 @@ footer {
     fill: var(--btn-bgd);
 }
 
+/*Footer form*/
+
+.footer-form{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.footer-input-email{
+    width: 264px;
+    height: 40px;
+    border-radius: 4px;
+    color: var(--backgroud-color);
+    font-size: 12px;    
+    letter-spacing: -0.02em;
+    background-color: transparent;
+    outline: transparent;
+    border: 1px solid var(--backgroud-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    padding-left: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    transition: border-color var(--animation);
+}
+
+.footer-input-email::placeholder{
+    color: var(--backgroud-color);  
+}
+
+.footer-input-email:hover{
+    border-color: var(--button-color);
+}
+
+.footer-btn{
+    display: inline-flex;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 16px;
+    height: 40px;
+    min-width: 140px;    
+
+}
+
+.footer-bnt-icon{
+    fill: none;
+    
+}
+
+
+
 /*Modal window */
 .backdrop{
     position: fixed;
@@ -690,6 +745,7 @@ footer {
     background: var(--modal-color);
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
 
+    padding: 72px 24px 24px 24px;
     transition: transform var(--animation);
 }
 
@@ -726,6 +782,7 @@ footer {
 }
 
 .modal-btn-icon{
+    fill: var(--backgroud-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -733,3 +790,139 @@ footer {
 .modal-btn-icon:focus{
     fill: var(--backgroud-color);
 }
+
+/*Modal form*/
+.modal-caption{
+    display: block;
+    width: 360px;
+    color: var(--nav-header-color);    
+    text-align: center;    
+    font-size: 16px;    
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    margin-bottom: 16px;
+}
+
+.modal-form-label {
+    display: block;
+    margin-bottom: 4px;
+    color: var(--customers-color);    
+    font-size: 12px;   
+    line-height: 1.16;
+    letter-spacing: -0.04em;
+   
+}
+.modal-form-field {
+    margin-bottom: 8px;
+    position: relative; 
+}
+.modal-form-input {       
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid rgba(46, 47, 66, 0.40);   
+    outline: transparent;
+    padding-left: 38px;
+
+    transition: border-color var(--animation);
+}
+
+.modal-form-input:focus{
+    border-color: var(--button-color);
+}
+
+
+.modal-form-icon {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    pointer-events: none;
+
+    fill: var(--nav-header-color);
+    stroke: var(--nav-header-color);
+    
+}
+
+.modal-form-input:focus + .modal-form-icon {
+    fill: var(--button-color);
+    stroke: var(--button-color);
+}
+.modal-form-comment {
+    width: 100%;
+    height: 120px;
+    border-radius: 4px;
+    order: 1px solid  rgba(46, 47, 66, 0.40);
+    resize: none;
+    outline: transparent;
+     
+    font-size: 12px;    
+    line-height: 1.17;
+    letter-spacing: -0.04em;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+
+    transition: border-color var(--animation);
+}
+
+.modal-form-comment:focus{
+    border-color: var(--button-color);
+}
+
+.modal-form-comment::placeholder{
+    color: rgba(46, 47, 66, 0.40);   
+}
+
+.modal-form-agreement {
+    display: flex;
+    align-items: center;
+    
+    color: var(--customers-color);    
+    font-size: 12px;    
+    line-height: 1.17;
+    letter-spacing: -0.04em;
+}
+
+.agreement-checkbox{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 16px;
+    height: 16px;
+    color: transparent;
+
+    border-radius: 2p;    
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    transition: background-color var(--animation), border-color var(--animation), color var(--animation);
+    margin-right: 8px;
+}
+
+input[type='checkbox']:checked + .agreement-checkbox{
+    background-color: var(--button-hover-background);
+    border-color: var(--button-hover-background);
+    color: var(--backgroud-color);
+}
+
+.agreement-checkbox-icon{
+    fill: currentColor;
+}
+
+.checkbox {
+}
+.modal-form-description {
+} 
+
+.modal-form-link{
+    color: var(--button-color);  
+}
+
+.modal-form-btn {
+    margin-top: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
