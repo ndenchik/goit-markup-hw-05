@@ -700,16 +700,15 @@ footer {
     display: inline-flex;
     padding: 8px 24px;
     justify-content: center;
-    align-items: center;
-    margin-left: 16px;
-    height: 40px;
-    min-width: 140px;    
+    align-items: center;    
+    height: 40px;     
+    min-width: 165px  
 
 }
 
 .footer-bnt-icon{
     fill: none;
-    
+    margin-left: 16px;    
 }
 
 
