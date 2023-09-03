@@ -889,8 +889,7 @@ footer {
 }
 
 .modal-form-description{
-    display: flex;
-    align-items: center; 
+    display: block;   
     color: var(--customers-color);    
     font-size: 12px;    
     line-height: 1.17;
