@@ -888,13 +888,6 @@ footer {
     
 }
 
-.modal-form-agreement {
-    display: flex;
-    align-items: center;
-    
-    
-}
-
 .modal-form-description{
     display: block; 
     color: var(--customers-color);    
@@ -913,14 +906,14 @@ footer {
 
     border-radius: 2px;    
     border: 1px solid rgba(46, 47, 66, 0.40);
-    transition: background-color var(--animation), border-color var(--animation), fill var(--animation);
+    transition: background-color var(--animation), border var(--animation), fill var(--animation);
     margin-right: 8px;
 }
 
 input[type='checkbox']:checked + .agreement-checkbox{
-    background-color: var(--button-hover-background);
-    border-color: var(--button-hover-background);
-    fill: var(--backgroud-color);
+    background-color: var(--button-hover-background);   
+    border: none;
+    fill: var(--btn-bgd);    
 }
 
 .agreement-checkbox-icon{
