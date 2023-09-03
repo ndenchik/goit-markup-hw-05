@@ -893,7 +893,7 @@ footer {
     color: var(--customers-color);    
     font-size: 12px;    
     line-height: 1.17;
-    letter-spacing: -0.04em;
+    letter-spacing: 0.04em;
 }
 .agreement-checkbox{
     display: inline-flex;
