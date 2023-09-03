@@ -889,7 +889,8 @@ footer {
 }
 
 .modal-form-description{
-    display: block; 
+    display: flex;
+    align-items: center; 
     color: var(--customers-color);    
     font-size: 12px;    
     line-height: 1.17;
@@ -910,11 +911,12 @@ footer {
     margin-right: 8px;
 }
 
-input[type='checkbox']:checked + .agreement-checkbox{
+input:checked+label>span {
     background-color: var(--button-hover-background);   
     border: none;
-    fill: var(--btn-bgd);    
-}
+    fill: var(--btn-bgd);
+} 
+
 
 .agreement-checkbox-icon{
     fill: currentColor;
