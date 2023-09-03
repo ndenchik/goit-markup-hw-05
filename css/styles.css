@@ -868,6 +868,7 @@ footer {
     line-height: 1.17;
     letter-spacing: 0.04em;
     padding: 8px 16px;
+    color: rgba(46, 47, 66, 0.4); 
    
     transition: border-color var(--animation);
 }
@@ -882,18 +883,25 @@ footer {
 
 .modal-agreement-item{
     margin-bottom: 24px; 
+    display: flex;
+    align-items: center;
+    
 }
 
 .modal-form-agreement {
     display: flex;
     align-items: center;
     
+    
+}
+
+.modal-form-description{
+    display: block; 
     color: var(--customers-color);    
     font-size: 12px;    
     line-height: 1.17;
     letter-spacing: -0.04em;
 }
-
 .agreement-checkbox{
     display: inline-flex;
     align-items: center;
@@ -901,22 +909,24 @@ footer {
 
     width: 16px;
     height: 16px;
-    color: transparent;
+    fill: transparent;
 
-    border-radius: 2p;    
+    border-radius: 2px;    
     border: 1px solid rgba(46, 47, 66, 0.40);
-    transition: background-color var(--animation), border-color var(--animation), color var(--animation);
+    transition: background-color var(--animation), border-color var(--animation), fill var(--animation);
     margin-right: 8px;
 }
 
 input[type='checkbox']:checked + .agreement-checkbox{
     background-color: var(--button-hover-background);
     border-color: var(--button-hover-background);
-    color: var(--backgroud-color);
+    fill: var(--backgroud-color);
 }
 
 .agreement-checkbox-icon{
     fill: currentColor;
+    width: 16px;
+    height: 16px;
 }
 
 .modal-form-link{
