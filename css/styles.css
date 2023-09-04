@@ -708,9 +708,13 @@ footer {
 }
 
 .footer-bnt-icon{
-    fill: none;     
+    fill: none;
+    margin-left: 16px;      
 }
 
+.hero-button{
+    gap: 0;
+}
 
 
 /*Modal window */
