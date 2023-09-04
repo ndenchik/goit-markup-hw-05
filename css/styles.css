@@ -703,13 +703,12 @@ footer {
     justify-content: center;
     align-items: center;    
     height: 40px;     
-    min-width: 165px  
+    min-width: 165px;  
 
 }
 
 .footer-bnt-icon{
-    fill: none;
-    margin-left: 16px;    
+    fill: none;     
 }
 
 
@@ -767,7 +766,8 @@ footer {
     justify-content: center;
 
     background-color: var(--card-border);
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);  
+   
 
     padding: 0;
     cursor: pointer;
@@ -782,7 +782,7 @@ footer {
 }
 
 .modal-btn-icon{
-    fill: var(--backgroud-color);
+    fill: var(--nav-header-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -792,9 +792,7 @@ footer {
 }
 
 /*Modal form*/
-.modal-caption{
-    display: block;
-    width: 360px;
+.modal-caption{    
     color: var(--nav-header-color);    
     text-align: center;    
     font-size: 16px;    
@@ -835,7 +833,6 @@ footer {
 .modal-form-input:focus{
     border-color: var(--button-color);
 }
-
 
 .modal-form-icon {
     position: absolute;
@@ -882,9 +879,9 @@ footer {
 }
 
 .modal-agreement-item{
-    margin-bottom: 24px; 
-    display: flex;
+    margin-bottom: 24px;        
     align-items: center;
+    justify-content: center;
     
 }
 
@@ -893,8 +890,9 @@ footer {
     color: var(--customers-color);    
     font-size: 12px;    
     line-height: 1.17;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.04em;    
 }
+
 .agreement-checkbox{
     display: inline-flex;
     align-items: center;
@@ -910,18 +908,16 @@ footer {
     margin-right: 8px;
 }
 
+.agreement-checkbox-icon{   
+    width: 16px;
+    height: 16px;
+}
+
 input:checked+label>span {
     background-color: var(--button-hover-background);   
     border: none;
     fill: var(--btn-bgd);
 } 
-
-
-.agreement-checkbox-icon{
-    fill: currentColor;
-    width: 16px;
-    height: 16px;
-}
 
 .modal-form-link{
     color: var(--button-color);  
@@ -929,7 +925,6 @@ input:checked+label>span {
 
 .modal-form-btn {    
     margin-left: auto;
-    margin-right: auto;
-    
+    margin-right: auto;    
 }
 
